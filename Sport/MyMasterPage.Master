@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MyMasterPage.master.cs" Inherits="Sport.MyMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Task Management System</title>
+
+
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="width:100%">
+            <div style="height:100px; background-color:gainsboro; text-align:center; font-size:45px">
+                Task Management System
+            </div>
+            <div style="height:30px; background-color:gainsboro; text-align:center; font-size:45px">
+                <table style="width:100%; font-size:20px">
+                    <tr>
+                        <td style="width:50%; text-align:left; ">
+                            <asp:Label ID="Lbl_UserName" runat="server"></asp:Label>
+                        </td>
+                        <td style="width:50%; text-align:right; "> 
+                            <asp:LinkButton ID="LnkBtn_LogOut" runat="server" OnClick="LnkBtn_LogOut_Click">Log Out</asp:LinkButton>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div style="padding-top:50px">
+                
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
